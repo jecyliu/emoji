@@ -18,26 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fl-VE-jge">
-                                <rect key="frame" x="113" y="186" width="192" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="109"/>
-                                <state key="normal" title="😀"/>
-                                <connections>
-                                    <action selector="happyEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBu-2K-hSH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-uA-rLc">
-                                <rect key="frame" x="148" y="447" width="118" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="109"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-uA-rLc">
+                                <rect key="frame" x="120" y="462" width="174" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KHH-uA-rLc" secondAttribute="height" multiplier="167:196" id="LzP-w9-b44"/>
+                                    <constraint firstAttribute="width" secondItem="KHH-uA-rLc" secondAttribute="height" multiplier="118:143" id="oxz-PU-bSU"/>
+                                    <constraint firstAttribute="width" secondItem="KHH-uA-rLc" secondAttribute="height" multiplier="17:20" id="yYE-Jv-7tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="130"/>
                                 <state key="normal" title="😕"/>
                                 <connections>
                                     <action selector="sadEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiF-bA-iHY"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7FL-m1-SXA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fl-VE-jge">
+                                <rect key="frame" x="117" y="206" width="181" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8fl-VE-jge" secondAttribute="height" multiplier="4:3" id="aZa-0g-UDS"/>
+                                    <constraint firstAttribute="width" secondItem="8fl-VE-jge" secondAttribute="height" multiplier="4:3" id="e7W-Ls-0ov"/>
+                                    <constraint firstAttribute="width" secondItem="8fl-VE-jge" secondAttribute="height" multiplier="4:3" id="gmp-ne-L0W"/>
+                                    <constraint firstAttribute="width" secondItem="8fl-VE-jge" secondAttribute="height" multiplier="4:3" id="pu6-YE-NXn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="130"/>
+                                <state key="normal" title="😀"/>
+                                <connections>
+                                    <action selector="happyEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBu-2K-hSH"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgr-bg-NLN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0Qx-zZ-UAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KHH-uA-rLc" secondAttribute="trailing" constant="25" id="119-ai-4ar"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="4Fe-Ml-pqP"/>
+                            <constraint firstItem="KHH-uA-rLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="9Wk-3i-V3A"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="APN-GL-gcd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fl-VE-jge" secondAttribute="trailing" constant="111" id="AeU-0J-xi5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fl-VE-jge" secondAttribute="trailing" constant="109" id="E8s-EF-aES"/>
+                            <constraint firstItem="KHH-uA-rLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="EHY-6s-PRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fl-VE-jge" secondAttribute="trailing" constant="25" id="Fam-Ui-ErO"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="NZj-Bb-b0B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fl-VE-jge" secondAttribute="trailing" constant="109" id="NsA-UP-tem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KHH-uA-rLc" secondAttribute="bottom" constant="189" id="cO3-4I-Zax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KHH-uA-rLc" secondAttribute="bottom" constant="25" id="ddG-f8-tpd"/>
+                            <constraint firstItem="KHH-uA-rLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="iMn-zm-NNR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KHH-uA-rLc" secondAttribute="trailing" constant="130" id="kvb-SL-3y1"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="rRw-YZ-rN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KHH-uA-rLc" secondAttribute="trailing" constant="148" id="tdp-dq-3aH"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="tsI-rB-xDd"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="tzo-kL-C5u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KHH-uA-rLc" secondAttribute="bottom" constant="272" id="vm7-cz-tdD"/>
+                            <constraint firstItem="8fl-VE-jge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="z6A-NI-kD4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
