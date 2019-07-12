@@ -11,15 +11,18 @@ import UIKit
 
 class ViewController: UIViewController {
     //var emojis = "😕😀"
-    let emojis = ["😕": "Happiness comes in waves. It'll find you again.", "😀": "Start each day with a grateful heart."]
-    
+    let emojis = ["😕": "sad emoji", "😀": "happy emoji"]
+    let emojiMessages = [
+        "sad emoji": ["Happiness comes in waves. It'll find you again.", "When you can't find the sunshine, be the sunshine.", "Forget the mistake. Remember the lesson."],
+        "happy emoji": ["Be the reason someone smiles today.", "Start each day with a grateful heart.", "Take time to do what makes your soul happy."]]
     
     //    @IBAction func happyEmoji(_ sender: Any) {
-//        let alertController = UIAlertController(title: "A positive message!", message: "Start each day with a grateful heart.", preferredStyle: UIAlertController.Style.alert)
     
     @IBAction func showMessage(sender: UIButton) {
             let selectedEmotion = sender.titleLabel?.text
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        let alertController = UIAlertController(title: "A positive message!", message: "Be happy.",
+                preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             present(alertController, animated: true, completion: nil)
         }
     

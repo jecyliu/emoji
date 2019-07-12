@@ -28,8 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="130"/>
                                 <state key="normal" title="😕"/>
                                 <connections>
-                                    <action selector="sadEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiF-bA-iHY"/>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7FL-m1-SXA"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tq4-2v-dt9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fl-VE-jge">
@@ -43,8 +42,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="130"/>
                                 <state key="normal" title="😀"/>
                                 <connections>
-                                    <action selector="happyEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBu-2K-hSH"/>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgr-bg-NLN"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKd-Fs-Hor"/>
                                 </connections>
                             </button>
                         </subviews>
