@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     //    @IBAction func happyEmoji(_ sender: Any) {
     
+    @IBOutlet weak var message: UILabel!
+    
     @IBAction func showMessage(sender: UIButton) {
             let selectedEmotion = sender.titleLabel?.text
         let emojiMessageArray = emojiMessages[emojis[selectedEmotion!]!]
